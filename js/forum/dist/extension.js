@@ -239,6 +239,12 @@ System.register('flagrow/user-directory/components/UserDirectoryListItem', ['fla
                         return m(
                             'div',
                             { className: 'User' },
+                            m(
+                                'span',
+                                { className: 'user--discussions' },
+                                'Diskussionen ',
+                                user.discussionsCount()
+                            ),
                             card
                         );
                     }
