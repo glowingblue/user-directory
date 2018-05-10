@@ -240,10 +240,14 @@ System.register('flagrow/user-directory/components/UserDirectoryListItem', ['fla
                             'div',
                             { className: 'User' },
                             m(
-                                'span',
+                                'div',
                                 { className: 'user--discussions' },
-                                'Diskussionen ',
-                                user.discussionsCount()
+                                m(
+                                    'span',
+                                    null,
+                                    'Diskussionen ',
+                                    user.discussionsCount()
+                                )
                             ),
                             card
                         );

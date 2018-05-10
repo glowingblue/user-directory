@@ -14,7 +14,7 @@ export default class UserDirectoryListItem extends Component {
 
         return (
             <div className="User">
-                <span className="user--discussions">Diskussionen {user.discussionsCount()}</span>
+                <div className="user--discussions"><span>Diskussionen: {user.discussionsCount()}</span></div>
                 {card}
             </div>
         )
