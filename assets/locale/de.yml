@@ -3,9 +3,10 @@ flagrow-user-directory:
         search:
             users_heading: 'Suche alle Benutzer für "{query}"'
         page:
+            nav: User Liste
             sort:
                 relevance: Relevanz
-                default: Standard
+                default: Alle User
                 username_az: Benutzername (a-z)
                 username_za: Benutzername (z-a)
                 newest: Neuste
